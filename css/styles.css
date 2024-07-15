@@ -500,6 +500,7 @@ body {
   letter-spacing: 0.02em;
 
   margin-bottom: 16px;
+  margin-right: auto;
   color: var(--white);
 }
 
@@ -534,6 +535,7 @@ body {
 .subscribe__wrapper {
   margin-left: 80px;
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
 }
 
@@ -560,7 +562,7 @@ body {
   outline: 1px solid var(--white);
 }
 
-[placeholder='E-mail'] {
+[placeholder] {
   color: var(--white);
 }
 
@@ -620,12 +622,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   margin-left: auto;
   margin-bottom: 24px;
-  padding: 0;
   background-color: var(--cornflower);
-  transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 .modal-btn:hover,
@@ -633,6 +634,10 @@ body {
   fill: var(--white);
   border: none;
   background-color: var(--ocean);
+}
+
+.modal__icon-close {
+  transition: fill 250ms var(--timing-function);
 }
 
 .modalForm__title {
