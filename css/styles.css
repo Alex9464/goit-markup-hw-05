@@ -755,6 +755,10 @@ body.modal-open {
     border 250ms var(--timing-function);
 }
 
+.modal-form__checkbox-icon {
+  display: inline-flex;
+}
+
 .modal-form__link {
   line-height: 1.33;
   text-decoration: underline;
