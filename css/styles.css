@@ -57,6 +57,10 @@ body {
   background-color: var(--white);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .btn {
   font-family: var(--font-family);
   font-weight: 500;
@@ -735,7 +739,7 @@ body {
 .modal-form__checkbox:checked + .modal-form__check .modal-form__checkbox-custom {
   background-color: var(--ocean);
   border: none;
-  fill: var(--white);
+  fill: var(--cloud);
 }
 
 .modal-form__checkbox-custom {
@@ -743,7 +747,7 @@ body {
   left: 0;
   width: 16px;
   height: 16px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2px;
@@ -759,8 +763,4 @@ body {
   text-decoration-skip-ink: none;
   color: var(--iris);
   margin-left: 5px;
-}
-
-body.modal-open {
-  overflow: hidden;
 }
