@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="modal-open">
     <!--------------- Header --------------->
     <header class="header">
       <div class="container">
@@ -451,10 +451,10 @@
         </div>
         <div class="subscribe__wrapper">
           <p class="subscribe__title">Subscribe</p>
-          <form class="footerForm">
-            <label class="footerForm__field" for="email"
+          <form class="footer-form">
+            <label class="footer-form__field" for="email"
               ><input
-                class="footerForm__input"
+                class="footer-form__input"
                 type="email"
                 name="email"
                 id="email"
@@ -479,42 +479,42 @@
           </svg>
         </button>
         <!--------------------------------- Form --------------------------------->
-        <p class="modalForm__title">Leave your contacts and we will call you back</p>
-        <form class="modalForm js-speaker-form">
-          <div class="modalForm__field">
-            <label class="modalForm__label" for="user-name">Name</label>
-            <div class="modalForm__inputWrap">
-              <input class="modalForm__input" type="text" name="user-name" id="user-name" />
-              <svg class="modalForm__icon" width="18" height="24">
+        <p class="modal-form__title">Leave your contacts and we will call you back</p>
+        <form class="modal-form js-speaker-form">
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="user-name">Name</label>
+            <div class="modal-form__input-wrap">
+              <input class="modal-form__input" type="text" name="user-name" id="user-name" />
+              <svg class="modal-form__icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modalForm__field">
-            <label class="modalForm__label" for="tel">Phone</label>
-            <div class="modalForm__inputWrap">
-              <input class="modalForm__input" type="tel" name="tel" id="tel" />
-              <svg class="modalForm__icon" width="18" height="24">
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="tel">Phone</label>
+            <div class="modal-form__input-wrap">
+              <input class="modal-form__input" type="tel" name="tel" id="tel" />
+              <svg class="modal-form__icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modalForm__field">
-            <label class="modalForm__label" for="mail">Email</label>
-            <div class="modalForm__inputWrap">
-              <input class="modalForm__input" type="email" name="mail" id="mail" />
-              <svg class="modalForm__icon" width="18" height="24">
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="mail">Email</label>
+            <div class="modal-form__input-wrap">
+              <input class="modal-form__input" type="email" name="mail" id="mail" />
+              <svg class="modal-form__icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-envelop"></use>
               </svg>
             </div>
           </div>
 
-          <div class="modalForm__textarea">
-            <label class="modalForm__label" for="user-comment">Comment</label>
+          <div class="modal-form__textarea">
+            <label class="modal-form__label" for="user-comment">Comment</label>
             <textarea
-              class="modalForm__input textarea"
+              class="modal-form__input textarea"
               name="user-comment"
               placeholder="Text input"
               id="user-comment"
@@ -522,26 +522,25 @@
             ></textarea>
           </div>
 
-          <div class="modalForm__contrackt">
+          <div class="modal-form__contrackt">
             <input
               type="checkbox"
-              class="modalForm__checkbox visually-hidden"
+              class="modal-form__checkbox visually-hidden"
               name="user-privacy"
               id="user-privacy"
               value="true"
             />
-            <label for="user-privacy" class="modalForm__check"
+            <label for="user-privacy" class="modal-form__check"
               >I accept the terms and conditions of the
-              <span class="modalForm__checkbox-custom">
-                <svg class="modalForm__checkbox-icon" width="10" height="8">
+              <span class="modal-form__checkbox-custom">
+                <svg class="modal-form__checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checked"></use>
                 </svg>
               </span>
-              <a class="modalForm__link" href="">Privacy Policy</a>
+              <a class="modal-form__link" href="">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="btn submit-btn">Send</button>
-          <!-- <div class="modalForm__btnWrap"></div> -->
         </form>
       </div>
     </div>

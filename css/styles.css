@@ -539,12 +539,12 @@ body {
   align-items: flex-end;
 }
 
-.footerForm {
+.footer-form {
   display: flex;
   gap: 24px;
 }
 
-.footerForm__input {
+.footer-form__input {
   width: 264px;
   height: 40px;
   padding-left: 16px;
@@ -640,7 +640,7 @@ body {
   transition: fill 250ms var(--timing-function);
 }
 
-.modalForm__title {
+.modal-form__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -651,11 +651,11 @@ body {
   margin-bottom: 16px;
 }
 
-.modalForm__field {
+.modal-form__field {
   margin-bottom: 8px;
 }
 
-.modalForm__label {
+.modal-form__label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -666,11 +666,11 @@ body {
   margin-bottom: 4px;
 }
 
-.modalForm__inputWrap {
+.modal-form__input-wrap {
   position: relative;
 }
 
-.modalForm__input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   padding: 11px 16px 11px 38px;
@@ -681,7 +681,7 @@ body {
   transition: border-color 250ms var(--timing-function);
 }
 
-.modalForm__icon {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -690,15 +690,15 @@ body {
   transition: fill 250ms var(--timing-function);
 }
 
-.modalForm__input:focus {
+.modal-form__input:focus {
   border-color: var(--iris);
 }
 
-.modalForm__input:focus + .modalForm__icon {
+.modal-form__input:focus + .modal-form__icon {
   fill: var(--iris);
 }
 
-.modalForm__textarea {
+.modal-form__textarea {
   margin-bottom: 16px;
 }
 
@@ -715,13 +715,13 @@ body {
   border: 1px solid var(--navy-blue-modal);
 }
 
-.modalForm__contrackt {
+.modal-form__contrackt {
   position: relative;
   margin-bottom: 24px;
   padding-left: 22px;
 }
 
-.modalForm__check {
+.modal-form__check {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -732,13 +732,13 @@ body {
   cursor: pointer;
 }
 
-.modalForm__checkbox:checked + .modalForm__check .modalForm__checkbox-custom {
+.modal-form__checkbox:checked + .modal-form__check .modal-form__checkbox-custom {
   background-color: var(--ocean);
   border: none;
   fill: var(--white);
 }
 
-.modalForm__checkbox-custom {
+.modal-form__checkbox-custom {
   position: absolute;
   left: 0;
   width: 16px;
@@ -753,10 +753,14 @@ body {
     border 250ms var(--timing-function);
 }
 
-.modalForm__link {
+.modal-form__link {
   line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--iris);
   margin-left: 5px;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
