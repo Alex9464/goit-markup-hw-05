@@ -722,7 +722,6 @@ body.modal-open {
 .modal-form__contrackt {
   position: relative;
   margin-bottom: 24px;
-  padding-left: 22px;
 }
 
 .modal-form__check {
@@ -743,10 +742,9 @@ body.modal-open {
 }
 
 .modal-form__checkbox-custom {
-  position: absolute;
-  left: 0;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
