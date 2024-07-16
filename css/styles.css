@@ -730,8 +730,6 @@ body.modal-open {
   letter-spacing: 0.04em;
   color: var(--light-slate);
 
-  display: flex;
-  align-items: center;
   cursor: pointer;
 }
 
@@ -753,10 +751,6 @@ body.modal-open {
   fill: transparent;
   transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function),
     border 250ms var(--timing-function);
-}
-
-.modal-form__checkbox-icon {
-  display: inline-flex;
 }
 
 .modal-form__link {
